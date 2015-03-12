@@ -23,9 +23,9 @@ define(['angular','angularRoute','vendor/routeResolver'], function (angular) {
              //Define routes - controllers will be loaded dynamically
             var route = routeResolverProvider.route;
 
-            $routeProvider.when('/customers', route.resolve('Customers'))
-            	.when('/customerorders/:customerID', route.resolve('CustomerOrders'))
-                .otherwise({ redirectTo: '/customers' });
+            $routeProvider.when('/', route.resolve('homeController'))
+            	.when('/contact', route.resolve('contactController'))
+                .otherwise({ redirectTo: '/' });
 
 
                 }]);
