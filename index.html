@@ -7,7 +7,8 @@
 		
 	</head>
 	<body>
-		<section ng-controller="testController">
+		<div ng-view></div>
+		<!-- section ng-controller="testController">
 			<header id="header">
 				<h1>Constituent Development System</h1>
 			</header>
@@ -18,6 +19,27 @@
 				
 			</footer>
 		</section>
+		<section class="buttons" ng-controller="crudController"> 
+			<button type="button" ng-click="add()">Add</button>
+			<button type="button" ng-click="edit()">Edit</button>
+			<button type="button" ng-click="delete()">Delete</button>
+		</section>
+		<section ng-controller="constituencyController">
+			<table>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>location</th>
+					<th>Id</th>
+				</tr>
+				<tr ng-repeat="constituency  in constituencyData">
+					<td>{{constituency.firstName}}</td>
+					<td>{{constituency.lastName}}</td>
+					<td>{{constituency.location}}</td>
+					<td>{{constituency.id}}</td>
+				</tr>	
+			</table>
+		</section -->
 		<footer id="info">
 		
 		</footer>
