@@ -3,16 +3,16 @@
 
 define(['angular','angularRoute','vendor/routeResolver'], function (angular) {
 
-	console.log("app 1");
-	var app = angular.module('CDS', ['ngRoute','routeResolverServices']);
+    console.log("app 1");
+    var app = angular.module('CDS', ['ngRoute','routeResolverServices']);
 console.log("app 2");
-	app.config(['$routeProvider', 'routeResolverProvider', '$controllerProvider', '$compileProvider', '$filterProvider', '$provide',
+    app.config(['$routeProvider', 'routeResolverProvider', '$controllerProvider', '$compileProvider', '$filterProvider', '$provide',
         function ($routeProvider, routeResolverProvider, $controllerProvider, $compileProvider, $filterProvider, $provide) {
 
 
-        	//routeResolverProvider.routeConfig.setBaseDirectories('scripts/views', 'scripts/controllers');
+            //routeResolverProvider.routeConfig.setBaseDirectories('scripts/views', 'scripts/controllers');
 console.log("app 3");
-        	app.register =
+            app.register =
             {
                 controller: $controllerProvider.register,
                 directive: $compileProvider.directive,
@@ -24,7 +24,7 @@ console.log("app 3");
             var route = routeResolverProvider.route;
 console.log("app 4");
             $routeProvider.when('/', route.resolve('home'))
-            	.when('/contact', route.resolve('contact'))
+                .when('/contact', route.resolve('contact'))
                 .otherwise({ redirectTo: '/' });
 
 
@@ -49,7 +49,7 @@ console.log("app 4");
 
 
 
-	//app.provider('routeResolver', routeResolver);
+    //app.provider('routeResolver', routeResolver);
 
-	return app;
+    return app;
 });
