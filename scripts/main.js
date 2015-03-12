@@ -12,6 +12,6 @@ require.config({
 	}
 });
 
-require(['angular', 'app', 'controllers/testController'], function (angular) {
+require(['angular', 'app', 'controllers/testController','controllers/constituencyController','controllers/crudController'], function (angular) {
 	angular.bootstrap(document, ['CDS']);
 });
