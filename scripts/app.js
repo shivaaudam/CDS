@@ -3,15 +3,14 @@
 
 define(['angular','angularRoute','vendor/routeResolver'], function (angular) {
 
-    console.log("app 1");
     var app = angular.module('CDS', ['ngRoute','routeResolverServices']);
-console.log("app 2");
+
     app.config(['$routeProvider', 'routeResolverProvider', '$controllerProvider', '$compileProvider', '$filterProvider', '$provide',
         function ($routeProvider, routeResolverProvider, $controllerProvider, $compileProvider, $filterProvider, $provide) {
 
 
             //routeResolverProvider.routeConfig.setBaseDirectories('scripts/views', 'scripts/controllers');
-console.log("app 3");
+
             app.register =
             {
                 controller: $controllerProvider.register,
@@ -22,9 +21,10 @@ console.log("app 3");
             };
              //Define routes - controllers will be loaded dynamically
             var route = routeResolverProvider.route;
-console.log("app 4");
+
             $routeProvider.when('/', route.resolve('home'))
                 .when('/contact', route.resolve('contact'))
+                .when('/list',route.resolve('list'))
                 .otherwise({ redirectTo: '/' });
 
 

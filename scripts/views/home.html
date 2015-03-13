@@ -1,5 +1,30 @@
-<div class="jumbotron text-center">
-	<h1>Home Page</h1>
-	
-	<p>{{ message }}</p>
-</div>
+<!--<div class="jumbotron text-center">
+	<h1>Constituency Development System</h1>	
+	<div>
+		<a href="#list"><button>View List</button></a>
+	</div>
+</div>-->
+
+<form name="loginForm" novalidate>
+	<div class="form-group">
+		<label for="username">Username:</label> 
+		<input type="text" id="username" name="username" ng-model="credentials.username" required/>
+		<!--<span>Valid: {{loginForm.username.$valid}}</span>-->
+		<div ng-hide='loginForm.username.$valid' class='error'>Must enter user name.</div>
+	</div>
+	<div class="form-group">
+		<label for="password">Password:</label> 
+		<input type="password" id="password" name="password" ng-model="credentials.password" required/>
+		<!--<span>Valid: {{loginForm.password.$valid}}</span>-->
+		<div ng-hide='loginForm.password.$valid' class='error'>Must enter password.</div>
+	</div>
+	<button type="submit" ng-disabled='loginForm.$invalid' ng-click="login()">Submit</button>
+	<button ng-click='loginForm.$setPristine()'>Reset</button>
+</form>
+<!-- 
+<div>
+	<h3>Some form properties</h3>
+	<div>The form is valid: {{loginForm.$valid}}</div>
+	<div>The form is invalid: {{loginForm.$invalid}}</div>
+</div> -->
+

@@ -7,8 +7,12 @@ define(['app'], function (app) {
 
 	 app.register.controller('homeController', ['$scope', function($scope){
 
-		$scope.message = 'Everyone come and see how good I look!';
+		$scope.message = 'Constituency Development System';
 
+		$scope.login = function(data){
+			console.log(data);
+
+		}
 
 	}]);
 

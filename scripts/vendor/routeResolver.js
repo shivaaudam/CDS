@@ -15,8 +15,8 @@ define(['angular'], function (angular) {
 
         this.routeConfig = function () {
 
-            var viewsDirectory = '/CDS/CDS/scripts/views/',
-                controllersDirectory = '/CDS/CDS/scripts/controllers/',
+            var viewsDirectory = '/CDS/scripts/views/',
+                controllersDirectory = '/CDS/scripts/controllers/',
 
             setBaseDirectories = function (viewsDir, controllersDir) {
                 viewsDirectory = viewsDir;

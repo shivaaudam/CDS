@@ -13,4 +13,7 @@ th {
 td{
 	text-align: center;
 }
+.error{
+	color: red;
+}
 
