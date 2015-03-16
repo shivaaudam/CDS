@@ -5,16 +5,20 @@
 
 define(['app'], function (app) {
 
-	 app.register.controller('homeController', ['$scope', function($scope){
+    app.register.controller('homeController', ['$scope', function($scope){
 
-		$scope.message = 'Constituency Development System';
+        $scope.message = 'Constituency Development System';
 
-		$scope.login = function(data){
-			console.log(data);
+        $scope.list = [];
 
-		}
-
-	}]);
+        $scope.submitForm = function(){
+            console.log("here");
+            console.log("posting data....");
+            $http.post('http://posttestserver.com/post.php?dir=jsfiddle', JSON.stringify(data)).success(function(){
+                console.log("success");
+            });
+        }
+    }]);
 
 });
 

@@ -25,6 +25,7 @@ define(['angular','angularRoute','vendor/routeResolver'], function (angular) {
             $routeProvider.when('/', route.resolve('home'))
                 .when('/contact', route.resolve('contact'))
                 .when('/list',route.resolve('list'))
+                .when('/add',route.resolve('add'))
                 .otherwise({ redirectTo: '/' });
 
 
