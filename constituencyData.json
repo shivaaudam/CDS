@@ -1,14 +1,64 @@
-[
-	{
-	"firstName" : "shiva shankar audam",
-	"id" : 1489,
-	"location" : "hyderabad",
-	"lastName" : "Audam"
-	},
-	{
-	"firstName" : "Gangadhar",
-	"id" : 1453,
-	"location" : "bangalore",
-	"lastName" : "Vuyyuru"
-	}
-]
+ [
+    {
+      "citizenId": 1,
+      "firstName": "Raju1",
+      "lastName": "Donepudi",
+      "middleName": "",
+      "gender": "M"
+    },
+    {
+      "citizenId": 2,
+      "firstName": "Venkat2",
+      "lastName": "S",
+      "middleName": "",
+      "gender": "M"
+    },
+    {
+      "citizenId": 3,
+      "firstName": "RP3",
+      "lastName": "Bolireddi",
+      "middleName": "",
+      "gender": "M"
+    },{
+      "citizenId": 1,
+      "firstName": "Raju4",
+      "lastName": "Donepudi",
+      "middleName": "",
+      "gender": "M"
+    },
+    {
+      "citizenId": 2,
+      "firstName": "Venkat5",
+      "lastName": "S",
+      "middleName": "",
+      "gender": "M"
+    },
+    {
+      "citizenId": 3,
+      "firstName": "RP6",
+      "lastName": "Bolireddi",
+      "middleName": "",
+      "gender": "M"
+    },
+    {
+      "citizenId": 1,
+      "firstName": "Raju7",
+      "lastName": "Donepudi",
+      "middleName": "",
+      "gender": "M"
+    },
+    {
+      "citizenId": 2,
+      "firstName": "Venkat8",
+      "lastName": "S",
+      "middleName": "",
+      "gender": "M"
+    },
+    {
+      "citizenId": 3,
+      "firstName": "RP9",
+      "lastName": "Bolireddi",
+      "middleName": "",
+      "gender": "M"
+    }
+  ]

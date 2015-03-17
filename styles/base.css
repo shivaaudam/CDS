@@ -17,3 +17,29 @@ td{
 	color: red;
 }
 
+.tiles{
+width: 194px;
+display: inherit;
+float: left;
+background-color: #ccc;
+border: #000 1px solid;
+padding: 2px;
+margin: 5px;
+height: 200px;
+}
+
+#filter{
+	background: burlywood;
+	width: 100px;
+	padding: 2px;
+	margin: 5px;
+}
+
+.cssSlideUp {
+    transition: .5s linear all;
+    height: 80px;
+    overflow: hidden;
+}
+.cssSlideUp.ng-hide {
+    height:0;
+}

@@ -1,20 +1,23 @@
 <section class="buttons">        
     <a href="#add"><button>Add</button></a>
-    <a href="#edit"><button>Edit</button></a>	
+    <a href="#edit"><button>Edit</button></a>
+    <input type="text" size="50" placeHolder="search" />	
+    <div id="filter" ng-click="showFilter()">filter</div>
+    <div ng-show="filter" class="cssSlideUp" >
+    	<ul>
+    		<li><input type="checkbox"> - Citizen </li>
+    		<li><input type="checkbox"> - Volenteer </li>
+    		<li><input type="checkbox"> - Cadre </li>
+    	</ul>
+
+    </div>
+
 </section>
 <section>
-	<table>
-		<tr>
-			<th>First Name</th>
-			<th>Last Name</th>
-			<th>location</th>
-			<th>Id</th>
-		</tr>
-		<tr ng-repeat="constituency  in constituencyData">
-			<td>{{constituency.firstName}}</td>
-			<td>{{constituency.lastName}}</td>
-			<td>{{constituency.location}}</td>
-			<td>{{constituency.id}}</td>
-		</tr>	
-	</table>
+	<div>Search</div>
+
+	<div ng-repeat="user in constituencyData" class="tiles">
+		<input type="checkbox">
+		{{user.firstName}}
+	</div>
 </section>
