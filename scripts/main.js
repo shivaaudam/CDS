@@ -5,7 +5,8 @@ require.config({
 	paths: {
 		angular: 'vendor/angular',
 		'angularRoute' : 'vendor/angular-route',
-		'angular-animate' : 'vendor/angular-animate'
+		'angular-animate' : 'vendor/angular-animate',
+		'resource' : 'vendor/resource'
 
 	},
 	shim: {
@@ -14,6 +15,9 @@ require.config({
 		},
 		'angular-animate' : {
 			exports : 'angular-animate'
+		},
+		'resource' : {
+			exports : 'resource'
 		},
 		'angularRoute': {
 			deps: ['angular']

@@ -1,9 +1,9 @@
 /*global define*/
 'use strict';
 
-define(['angular','angularRoute','vendor/routeResolver','angular-animate'], function (angular) {
+define(['angular','angularRoute','vendor/routeResolver','angular-animate','resource'], function (angular) {
 
-    var app = angular.module('CDS', ['ngRoute','routeResolverServices','ngAnimate']);
+    var app = angular.module('CDS', ['ngRoute','routeResolverServices','ngAnimate','ngResource']);
 
     app.config(['$routeProvider', 'routeResolverProvider', '$controllerProvider', '$compileProvider', '$filterProvider', '$provide',
         function ($routeProvider, routeResolverProvider, $controllerProvider, $compileProvider, $filterProvider, $provide) {

@@ -5,10 +5,11 @@
     <div id="filter" ng-click="showFilter()">filter</div>
     <div ng-show="filter" class="cssSlideUp" >
     	<ul>
-    		<li><input type="checkbox"> - Citizen </li>
-    		<li><input type="checkbox"> - Volenteer </li>
-    		<li><input type="checkbox"> - Cadre </li>
+    		<li><input type="checkbox" ng-model="citizen"> - Citizen </li>
+    		<li><input type="checkbox" ng-model="volenteer"> - Volenteer </li>
+    		<li><input type="checkbox" ng-model="cadre"> - Cadre </li>
     	</ul>
+    	<button ng-click="search()">Filter</button>
 
     </div>
 
